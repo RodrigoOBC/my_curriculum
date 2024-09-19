@@ -12,3 +12,9 @@ def index():
         personal_data = json.load(my_json)
         
     return render_template('index.html',data=personal_data)
+
+
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
