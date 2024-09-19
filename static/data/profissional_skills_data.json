@@ -1,0 +1,32 @@
+{
+    "jobs":[{
+        "position": "Desenvolvedor Front-End",
+        "company": "Empresa X",
+        "startDate": "2020",
+        "endDate": "2020",
+        "description": "Desenvolvimento de aplicações web utilizando ReactJS, HTML, CSS e JavaScript."
+
+    },{
+
+    }],
+    "Educations":[{
+
+        "institution": "Universidade X",
+        "course": "Ciência da Computação",
+        "startDate": "2015",
+        "endDate": "2019",
+        "description": "Graduação em Ciência da Computação."
+
+    },{
+
+    }],
+    "Skills":[{
+
+        "skill": "C#",
+        "imgLink": "c-sharp-logo-2"
+
+    },{
+
+    }]
+    
+}
