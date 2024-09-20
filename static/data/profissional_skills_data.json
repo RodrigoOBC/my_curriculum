@@ -20,11 +20,37 @@
             "startDate": "Nov. 2022",
             "endDate": "Abr. 2023",
             "descriptions": [
-                "Providing leadership to the QA team and ensuring the team's productivity and quality standards;",
-                "Automating multi-language API test cases using frameworks such as K6 to improve efficiency and accuracy;",
-                "Automating web-based test cases using Selenium and programming languages such as Python or NodeJS to ensure compatibility across different browsers and platforms;",
-                "utomating web-based test cases using Playwright and programming languages such as Python or NodeJS to improve testing efficiency;",
-                "Automating web-based test cases using Cypress, Protractor, and Puppeteer to improve testing coverage and reliability;"
+                "Fornecendo liderança para a equipe de QA e garantindo os padrões de produtividade e qualidade da equipe;",
+                "Automatizando casos de teste de API multilíngue usando frameworks como K6 para melhorar a eficiência e a precisão;",
+                "Automatizando casos de teste baseados na web usando Selenium e linguagens de programação como Python ou NodeJS para garantir compatibilidade entre diferentes navegadores e plataformas;",
+                "Automatizando casos de teste baseados na web usando Playwright e linguagens de programação como Python ou NodeJS para melhorar a eficiência dos testes;",
+                "Automatizando casos de teste baseados na web usando Cypress, Protractor e Puppeteer para melhorar a cobertura e a confiabilidade dos testes;"
+            ],
+            "state": "Rio de Janeiro - RJ"
+        },
+        {
+            "position": "Analista de Teste Pl.",
+            "company": "Radix Engenharia e Software",
+            "startDate": "Jan. 2022",
+            "endDate": "Nov. 2022",
+            "descriptions": [
+                "Automatizando casos de teste de API multilíngue usando frameworks como K6 para melhorar a eficiência e a precisão;",
+                "Automatizando casos de teste baseados na web usando Selenium e linguagens de programação como Python ou NodeJS para garantir compatibilidade entre diferentes navegadores e plataformas;",
+                "Automatizando casos de teste baseados na web usando Playwright e linguagens de programação como Python ou NodeJS para melhorar a eficiência dos testes;",
+                "Automatizando casos de teste baseados na web usando Cypress, Protractor e Puppeteer para melhorar a cobertura e a confiabilidade dos testes;"
+            ],
+            "state": "Rio de Janeiro - RJ"
+        },
+        {
+            "position": "Analista de Teste Jr.",
+            "company": "Radix Engenharia e Software",
+            "startDate": "Jan. 2020",
+            "endDate": "Fev. 2022",
+            "descriptions": [
+                "Automatizando casos de teste de API multilíngue usando frameworks como K6 para melhorar a eficiência e a precisão;",
+                "Automatizando casos de teste baseados na web usando Selenium e linguagens de programação como Python ou NodeJS para garantir compatibilidade entre diferentes navegadores e plataformas;",
+                "Automatizando casos de teste baseados na web usando Playwright e linguagens de programação como Python ou NodeJS para melhorar a eficiência dos testes;",
+                "Automatizando casos de teste baseados na web usando Cypress, Protractor e Puppeteer para melhorar a cobertura e a confiabilidade dos testes;"
             ],
             "state": "Rio de Janeiro - RJ"
         }
