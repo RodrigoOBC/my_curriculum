@@ -9,23 +9,64 @@
     },{
 
     }],
-    "Educations":[{
+    "Educations":[
+    {
 
-        "institution": "Universidade X",
-        "course": "Ciência da Computação",
-        "startDate": "2015",
-        "endDate": "2019",
+        "institution": "Puc Minas",
+        "course": "Ciência de dados e Big Data",
+        "state": "EAD",
+        "startDate": "2020",
+        "endDate": "2022",
+        "type":"Pós-Graduação",
         "description": "Graduação em Ciência da Computação."
 
-    },{
+    },
+    {
+
+        "institution": "Unicarioca",
+        "course": "Ciência da Computação",
+        "state": "Rio de Janeiro - RJ",
+        "startDate": "2015",
+        "endDate": "2019",
+        "type":"Bacharelado",
+        "description": "Graduação em Ciência da Computação."
 
     }],
     "Skills":[{
 
-        "skill": "C#",
-        "imgLink": "c-sharp-logo-2"
+        "skill": "Python"
 
     },{
+
+        "skill": "C#"
+
+    },{
+
+        "skill": "NodeJS"
+
+    },{
+
+        "skill": "Playwright"
+
+    },{
+
+        "skill": "Cypress"
+
+    },{
+
+        "skill": "Postman"
+
+    },{
+
+        "skill": "K6"
+
+    },{
+
+        "skill": "Docker"
+
+    },{
+
+        "skill": "PactJs"
 
     }]
     
