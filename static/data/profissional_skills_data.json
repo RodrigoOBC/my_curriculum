@@ -1,73 +1,81 @@
 {
-    "jobs":[{
-        "position": "Desenvolvedor Front-End",
-        "company": "Empresa X",
-        "startDate": "2020",
-        "endDate": "2020",
-        "description": "Desenvolvimento de aplicações web utilizando ReactJS, HTML, CSS e JavaScript."
-
-    },{
-
-    }],
-    "Educations":[
-    {
-
-        "institution": "Puc Minas",
-        "course": "Ciência de dados e Big Data",
-        "state": "EAD",
-        "startDate": "2020",
-        "endDate": "2022",
-        "type":"Pós-Graduação",
-        "description": "Pós Graduação em Ciência de dados e Big Data."
-
-    },
-    {
-
-        "institution": "Unicarioca",
-        "course": "Ciência da Computação",
-        "state": "Rio de Janeiro - RJ",
-        "startDate": "2015",
-        "endDate": "2019",
-        "type":"Bacharelado",
-        "description": "Graduação em Ciência da Computação."
-
-    }],
-    "Skills":[{
-
-        "skill": "Python"
-
-    },{
-
-        "skill": "C#"
-
-    },{
-
-        "skill": "NodeJS"
-
-    },{
-
-        "skill": "Playwright"
-
-    },{
-
-        "skill": "Cypress"
-
-    },{
-
-        "skill": "Postman"
-
-    },{
-
-        "skill": "K6"
-
-    },{
-
-        "skill": "Docker"
-
-    },{
-
-        "skill": "PactJs"
-
-    }]
-    
+    "jobs": [
+        {
+            "position": "Tech Lead QA",
+            "company": "Radix Engenharia e Software",
+            "startDate": "ABRIL 2023",
+            "endDate": "Presente",
+            "descriptions": [
+                "Gerenciar a equipe de garantia de qualidade e garantir a produtividade da equipe e a qualidade dos resultados entregues;",
+                "Estabelecer e implementar estratégias de automação de testes para garantir a eficiência e a precisão dos testes realizados;",
+                "Coordenar a execução de testes de software para identificar defeitos e garantir a conformidade com os requisitos do produto;",
+                "Comunicar-se com outros líderes de equipe e partes interessadas para garantir o alinhamento das prioridades de teste e o progresso do projeto;",
+                "Automatizar casos de teste baseados na web usando Cypress, Protractor e Puppeteer para melhorar a cobertura e a confiabilidade dos testes;"
+            ],
+            "state": "Rio de Janeiro - RJ"
+        },
+        {
+            "position": "Analista de Teste Sr.",
+            "company": "Radix Engenharia e Software",
+            "startDate": "Nov. 2022",
+            "endDate": "Abr. 2023",
+            "descriptions": [
+                "Providing leadership to the QA team and ensuring the team's productivity and quality standards;",
+                "Automating multi-language API test cases using frameworks such as K6 to improve efficiency and accuracy;",
+                "Automating web-based test cases using Selenium and programming languages such as Python or NodeJS to ensure compatibility across different browsers and platforms;",
+                "utomating web-based test cases using Playwright and programming languages such as Python or NodeJS to improve testing efficiency;",
+                "Automating web-based test cases using Cypress, Protractor, and Puppeteer to improve testing coverage and reliability;"
+            ],
+            "state": "Rio de Janeiro - RJ"
+        }
+    ],
+    "Educations": [
+        {
+            "institution": "Puc Minas",
+            "course": "Ciência de dados e Big Data",
+            "state": "EAD",
+            "startDate": "2020",
+            "endDate": "2022",
+            "type": "Pós-Graduação",
+            "description": "Pós Graduação em Ciência de dados e Big Data."
+        },
+        {
+            "institution": "Unicarioca",
+            "course": "Ciência da Computação",
+            "state": "Rio de Janeiro - RJ",
+            "startDate": "2015",
+            "endDate": "2019",
+            "type": "Bacharelado",
+            "description": "Graduação em Ciência da Computação."
+        }
+    ],
+    "Skills": [
+        {
+            "skill": "Python"
+        },
+        {
+            "skill": "C#"
+        },
+        {
+            "skill": "NodeJS"
+        },
+        {
+            "skill": "Playwright"
+        },
+        {
+            "skill": "Cypress"
+        },
+        {
+            "skill": "Postman"
+        },
+        {
+            "skill": "K6"
+        },
+        {
+            "skill": "Docker"
+        },
+        {
+            "skill": "PactJs"
+        }
+    ]
 }
