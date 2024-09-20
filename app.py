@@ -13,6 +13,12 @@ def index():
         
     return render_template('index.html',data=personal_data)
 
+@app.route('/education')
+def education():
+    with open("static/data/profissional_skills_data.json", encoding='utf-8') as my_json:
+        education = json.load(my_json)
+        
+    return render_template('education.html',data=education)
 
 
 
