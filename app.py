@@ -20,7 +20,12 @@ def education():
         
     return render_template('education.html',data=education)
 
-
+@app.route('/work')
+def work():
+    with open("static/data/profissional_skills_data.json", encoding='utf-8') as my_json:
+        work = json.load(my_json)
+        
+    return render_template('experience.html',data=work)
 
 if __name__ == "__main__":
     app.run(debug=True)
