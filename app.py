@@ -27,7 +27,7 @@ def work():
         
     return render_template('experience.html',data=work)
 
-@app.route('/projects')
+@app.route('/articles')
 def projects():
     with open("static/data/articles.json", encoding='utf-8') as my_json:
         articles = json.load(my_json)

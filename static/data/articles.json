@@ -1,6 +1,39 @@
 {
-    "title": "Article 1",
-    "content": "This is the content of article 1",
-    "author":"",
-    "link": "https://www.google.com"
+    "articles": [
+        {
+            "title": "Docker para QAs: Padronizando seus Testes com Playwright",
+            "content": "No mundo dinâmico do QA, a agilidade e a confiabilidade dos testes são cruciais. O Docker surge como um aliado poderoso, oferecendo um ambiente padronizado e replicável para automatizar seus testes com o Playwright. Neste artigo, embarcaremos em uma jornada para otimizar seus testes com Docker, desde a instalação até a execução.",
+            "author": "Rodrigo Cabral",
+            "link": "https://medium.com/@rodrigo.oliveiracabral/docker-para-qas-padronizando-seus-testes-com-playwright-8a0d1babd90d",
+            "img": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*EZRhyH6cwRUgZd4u"
+        },
+        {
+            "title": "Playwright Básico — Introdução à Automação de Testes Web",
+            "content": "Aprenda os fundamentos da automação de testes web com Playwright: desde a configuração inicial até a navegação e interação com elementos da página. Utilizando JavaScript.",
+            "author": "Rodrigo Cabral",
+            "link": "https://medium.com/p/e90428b176d2",
+            "img": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*EZRhyH6cwRUgZd4u"
+        },
+        {
+            "title": "Automatizando testes com Playwright e PageObject: uma abordagem prática",
+            "content": "Neste artigo, exploraremos como o “pageobject” combinado com a poderosa biblioteca Playwright pode revolucionar a maneira como automatizamos testes, tornando-os mais práticos e eficientes. Prepare-se para descobrir uma abordagem que pode acelerar seu fluxo de trabalho e trazer resultados consistentes em suas automações de testes web.",
+            "author": "Rodrigo Cabral",
+            "link": "https://medium.com/p/e0f7aa39e36f",
+            "img": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*EZRhyH6cwRUgZd4u"
+        },
+        {
+            "title": "Playwright vs. Cypress — Uma Análise Detalhada",
+            "content": "Um pequeno artigo comparativo entre as duas ferramentas mais populares de teste de interface ou teste E2E. Quem levará a melhor nessa disputa? Playwright ou Cypress?",
+            "author": "Rodrigo Cabral",
+            "link": "https://medium.com/p/e7ae66198c95",
+            "img": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*EZRhyH6cwRUgZd4u"
+        },
+        {
+            "title": "Docker para QAs: Ambiente de desenvolvimento Cypress com Docker",
+            "content": "Descubra o segredo que as maiores empresas de tecnologia estão usando para revolucionar seus processos de qualidade! Se você já ouviu falar sobre Cypress e Docker, mas nunca soube exatamente como integrá-los para alcançar testes automatizados eficientes, este artigo é para você.",
+            "author": "Rodrigo Cabral",
+            "link": "https://medium.com/@rodrigo.oliveiracabral/docker-para-qas-ambiente-de-desenvolvimento-cypress-com-docker-545daa77824a",
+            "img": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*EZRhyH6cwRUgZd4u"
+        }
+    ]
 }
