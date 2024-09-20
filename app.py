@@ -27,5 +27,12 @@ def work():
         
     return render_template('experience.html',data=work)
 
+@app.route('/projects')
+def projects():
+    with open("static/data/articles.json", encoding='utf-8') as my_json:
+        projects = json.load(my_json)
+        
+    return render_template('projects.html',data=projects)
+
 if __name__ == "__main__":
     app.run(debug=True)
