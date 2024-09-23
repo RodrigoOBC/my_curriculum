@@ -8261,6 +8261,7 @@ textarea.form-control-lg {
 .text-muted {
   --bs-text-opacity: 1;
   color: #6c757d !important;
+  text-align: justify;
 }
 
 .text-black-50 {
@@ -11576,11 +11577,11 @@ html {
 
 .bg-gradient-primary-to-secondary {
   background: #1e30f3;
-  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+  background: linear-gradient(135deg, #007bff 0%, #000000 100%);
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+  background: -webkit-linear-gradient(315deg, #007bff 0%, #000000 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
