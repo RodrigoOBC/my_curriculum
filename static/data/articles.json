@@ -34,6 +34,13 @@
             "author": "Rodrigo Cabral",
             "link": "https://medium.com/@rodrigo.oliveiracabral/docker-para-qas-ambiente-de-desenvolvimento-cypress-com-docker-545daa77824a",
             "img": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*EZRhyH6cwRUgZd4u"
+        },
+        {
+            "title": "Teste de Integração com k6",
+            "content": "Ao ler este artigo, você aprenderá a utilizar a ferramenta k6 para realizar testes de integração em suas APIs RESTful. O k6 é uma ferramenta gratuita com uma curva de aprendizado acessível. Embora seja conhecido por seus recursos de teste de “stress” e carga, o k6 também é uma excelente opção para testes de integração, como veremos a seguir.",
+            "author": "Rodrigo Cabral",
+            "link": "https://medium.com/@rodrigo.oliveiracabral/teste-de-integra%C3%A7%C3%A3o-com-k6-10a5f3912e75",
+            "img": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*EZRhyH6cwRUgZd4u"
         }
     ]
 }
