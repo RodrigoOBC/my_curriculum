@@ -34,5 +34,12 @@ def projects():
         
     return render_template('articles.html',data=articles)
 
+@app.route('/repositories')
+def repositories():
+    with open("static/data/repositories.json", encoding='utf-8') as my_json:
+        repositories = json.load(my_json)
+        
+    return render_template('repository.html',data=repositories)
+
 if __name__ == "__main__":
     app.run(debug=True)

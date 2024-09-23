@@ -1,10 +1,53 @@
 {
-    "github":[{
-        "title": "Repository 1",
-        "subtitle": "This is the description of repository 1",
-        "description": "This is the description of repository 1",
-        "link": "https://www.google.com",
-        "tags": ["tag1", "tag2"]
+    "github":[
+        {
+        "title": "Cypress DevContainer",
+        "subtitle": "Framework para testes de interface com Cypress e Docker",
+        "description": "Framework para testes de interface com Cypress e Docker",
+        "link": "https://github.com/RodrigoOBC/Cypress_devContainer",
+        "tags": ["cypress", "Docker", "NodeJs"]
 
-    }]
+    },
+        {
+        "title": "Playwright DevContainer",
+        "subtitle": "Framework para testes de interface com Palywright e Docker",
+        "description": "Framework para testes de interface com Palywright e Docker",
+        "link": "https://github.com/RodrigoOBC/playwright_page_object",
+        "tags": ["Palywright", "Docker", "NodeJs"]
+
+    },
+        {
+        "title": "Framework Selenium com Python-BDD",
+        "subtitle": "Framework para testes de interface com Cypress e Docker",
+        "description": "Framework para testes de interface com Selenium e Cucumber",
+        "link": "https://github.com/RodrigoOBC/FrameWorkSeleniumPythonBDD",
+        "tags": ["Selenium", "Python", "Cucumber"]
+
+    },
+        {
+        "title": "Framework Puppeteer com Cucumber",
+        "subtitle": "Framework para testes de interface com Puppeteer e Cucumber",
+        "description": "Framework para testes de interface com Puppeteer e Cucumber",
+        "link": "https://github.com/RodrigoOBC/PuppeteerFrameWork",
+        "tags": ["Puppeteer", "NodeJs", "Cucumber"]
+
+    },
+        {
+        "title": "Notbook com Redes Neurais",
+        "subtitle": "Framework para testes de interface com Cypress e Docker",
+        "description": "Notbook com Redes Neurais",
+        "link": "https://github.com/RodrigoOBC/Notebooks_RedesNeurais",
+        "tags": ["Python", "Tensorflow", "Pandas"]
+
+    },
+        {
+        "title": "Notbook com Redes Neurais",
+        "subtitle": "Framework para testes de interface com Cypress e Docker",
+        "description": "Notbook com Redes Neurais",
+        "link": "https://github.com/RodrigoOBC/Notebooks_RedesNeurais",
+        "tags": ["Python", "Tensorflow", "Pandas"]
+
+    }
+
+]
 }
