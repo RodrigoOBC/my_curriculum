@@ -11751,4 +11751,94 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+
+
+  
+}
+
+.repo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.repo-link {
+  text-decoration: none; /* Remove sublinhado do link */
+  color: inherit; /* Mantém a cor do texto */
+  display: block; /* Permite que o link envolva todo o box */
+  width: calc(33.333% - 20px); /* Mantém o tamanho do box */
+}
+
+.repo-box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  height: 100%; /* Garante que o box tenha altura completa dentro do link */
+}
+
+.repo-box:hover {
+  transform: translateY(-5px);
+}
+
+.repo-title {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.repo-subtitle {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.repo-desc {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.repo-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: linear-gradient(90deg, #007bff, #000);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  text-align: center;
+  white-space: nowrap;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.tag:hover {
+  background: linear-gradient(90deg, #000, #007bff);
+  transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .repo-link {
+      width: calc(50% - 20px); /* 2 boxes por linha */
+  }
+}
+
+@media (max-width: 768px) {
+  .repo-link {
+      width: calc(50% - 20px); /* Ainda 2 por linha para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .repo-link {
+      width: 100%; /* 1 box por linha em telas muito pequenas */
+  }
 }
