@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>{{data.Name + " - " +  data.LastName}}</title>
+        <title>{{personal_data.Name + " - " +  personal_data.LastName}}</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
         <!-- Custom Google font-->
@@ -22,6 +22,8 @@
             <!-- Navigation-->
             {% include 'navbar.html' %}
             <!-- Header-->
+
+            
             <header class="py-5">
                 <div class="container px-5 pb-5">
                     <div class="row gx-5 align-items-center">
@@ -31,9 +33,13 @@
                                 <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Playwright &middot; Cypress &middot; K6</div></div>
                                 <div class="fs-3 fw-light text-muted">Bem vindo! </div>
                                 <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Um pouco sobre mim</span></h1>
+                                {% for paragraph in personal_data.AboutMe %}
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <p class="text-muted">{{data.AboutMe}}</p>
+                                    
+                                    <p class="text-muted">{{paragraph}}</p>
+                                    
                                 </div>
+                                {% endfor %}
                             </div>
                         </div>
                         <div class="col-xxl-7">
@@ -161,38 +167,27 @@
                     </div>
                 </div>
             </header>
-            <!-- About Section-->
-            <section class="bg-light py-5">
+
+             <!-- About Section-->
+             <section class="bg-light py-5">
                 <div class="container px-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-xxl-8">
                             <div class="text-center my-5">
                                 <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href={{ data.linkedin }}><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href={{ data.github }}><i class="bi bi-github"></i></a>
-                                    <a class="text-gradient" href={{ data.mediun }}><i class="bi bi-medium"></i></a>
+                                    <a class="text-gradient" href={{ personal_data.linkedin }}><i class="bi bi-linkedin"></i></a>
+                                    <a class="text-gradient" href={{ personal_data.github }}><i class="bi bi-github"></i></a>
+                                    <a class="text-gradient" href={{ personal_data.mediun }}><i class="bi bi-medium"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+           
         </main>
         <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Rodrigo Cabral 2024</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <!-- <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a> -->
-                    </div>
-                </div>
-            </div>
-        </footer>
+        {% include 'footer.html' %}
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

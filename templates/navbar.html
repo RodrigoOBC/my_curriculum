@@ -1,8 +1,15 @@
 <!-- templates/navbar.html -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
     <div class="container px-5">
-        <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Rodrigo de Brito de Oliveira Cabral</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <a class="navbar-brand" href="/"><span class="fw-bolder text-primary">Rodrigo de Brito de Oliveira
+                Cabral</span></a>
+
+                <a class="text-gradient" href="{{ personal_data.linkedin }}" style="margin-left: 15px;"><i class="bi bi-linkedin"></i></a>
+                <a class="text-gradient" href="{{ personal_data.github }}" style="margin-left: 15px;"><i class="bi bi-github"></i></a>
+                <a class="text-gradient" href="{{ personal_data.mediun }} "style="margin-left: 15px;"><i class="bi bi-medium"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                 <li class="nav-item"><a class="nav-link" href="/">Sobre Mim</a></li>
@@ -10,8 +17,10 @@
                 <li class="nav-item"><a class="nav-link" href="/work">Experiência</a></li>
                 <li class="nav-item"><a class="nav-link" href="/articles">Artigos</a></li>
                 <li class="nav-item"><a class="nav-link" href="/repositories">Repositórios</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li> -->
             </ul>
+            <a class="text-gradient" href="{{ personal_data.linkedin }}" style="margin-left: 15px;"><i class="bi bi-linkedin"></i></a>
+                <a class="text-gradient" href="{{ personal_data.github }}" style="margin-left: 15px;"><i class="bi bi-github"></i></a>
+                <a class="text-gradient" href="{{ personal_data.mediun }} "style="margin-left: 15px;"><i class="bi bi-medium"></i></a>
         </div>
     </div>
 </nav>
