@@ -49,5 +49,5 @@ def repositories():
         
     return render_template('repository.html',data=repositories,personal_data=personal_data)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)
