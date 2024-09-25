@@ -19,8 +19,9 @@ def education():
         education = json.load(my_json)
     with open("static/data/personal_data.json", encoding='utf-8') as my_json:
         personal_data = json.load(my_json)
+    heading = "Formação"
         
-    return render_template('education.html',data=education, personal_data=personal_data)
+    return render_template('education.html',data=education, personal_data=personal_data,heading=heading)
 
 @app.route('/work')
 def work():
@@ -28,8 +29,8 @@ def work():
         work = json.load(my_json)
     with open("static/data/personal_data.json", encoding='utf-8') as my_json:
         personal_data = json.load(my_json)
-        
-    return render_template('experience.html',data=work,personal_data=personal_data)
+    heading = "Experiência"
+    return render_template('experience.html',data=work,personal_data=personal_data,heading=heading)
 
 @app.route('/articles')
 def projects():
