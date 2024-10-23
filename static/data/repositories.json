@@ -47,6 +47,14 @@
         "link": "https://github.com/RodrigoOBC/Notebooks_RedesNeurais",
         "tags": ["Python", "Tensorflow", "Pandas"]
 
+    },
+        {
+        "title": "Meu portifolio",
+        "subtitle": "Tamplate de portifolio com flask",
+        "description": "Tamplate de portifolio com flask",
+        "link": "https://github.com/RodrigoOBC/my_curriculum",
+        "tags": ["Python", "Html", "Flask"]
+
     }
 
 ]
