@@ -41,6 +41,13 @@
             "author": "Rodrigo Cabral",
             "link": "https://medium.com/@rodrigo.oliveiracabral/teste-de-integra%C3%A7%C3%A3o-com-k6-10a5f3912e75",
             "img": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*EZRhyH6cwRUgZd4u"
+        },
+        {
+            "title": "De QA para QA: Criando seu primeiro Portifólio WebSite",
+            "content": "Esse artigo será dividido em 2 partes e nele apresentarei o meu “Site Curriculum” e os desafios que enfrentei para criá-lo. Compartilharei no fim do artigo o código-fonte para que vocês possam usá-lo como “template”.",
+            "author": "Rodrigo Cabral",
+            "link": "https://medium.com/@rodrigo.oliveiracabral/de-qa-para-qa-criando-seu-primeiro-portif%C3%B3lio-website-68179bc1bffc",
+            "img": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*qvKeCjtkWhJLug3fD6khog.png"
         }
     ]
 }
