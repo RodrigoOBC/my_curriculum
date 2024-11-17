@@ -55,6 +55,14 @@
         "link": "https://github.com/RodrigoOBC/my_curriculum",
         "tags": ["Python", "Html", "Flask"]
 
+    },
+        {
+        "title": "Framework Playwright com NodeJs",
+        "subtitle": "Framework Playwright com NodeJs + Docker",
+        "description": "Tamplate de teste de interface com Playwright e NodeJs. O teste é realizado em um container Docker",
+        "link": "https://github.com/RodrigoOBC/PlaywrightFrameworkNodejs",
+        "tags": ["Palywright", "Docker", "NodeJs"]
+
     }
 
 ]
