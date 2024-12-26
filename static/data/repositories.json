@@ -33,17 +33,17 @@
 
     },
         {
-        "title": "Notbook com Redes Neurais",
-        "subtitle": "Framework para testes de interface com Cypress e Docker",
-        "description": "Notbook com Redes Neurais",
-        "link": "https://github.com/RodrigoOBC/Notebooks_RedesNeurais",
+        "title": "TCC Ciencia de Dados", 
+        "subtitle": "Projeto de conclusão de curso - Pós Graduação em Ciencia de Dados",
+        "description": "Projeto de conclusão de curso - Pós Graduação em Ciencia de Dados",
+        "link": "https://github.com/RodrigoOBC/TCC-CienciaDados",
         "tags": ["Python", "Tensorflow", "Pandas"]
 
     },
         {
         "title": "Notbook com Redes Neurais",
-        "subtitle": "Framework para testes de interface com Cypress e Docker",
-        "description": "Notbook com Redes Neurais",
+        "subtitle": "Alguns exemplos de Redes Neurais",
+        "description": "Alguns exemplos de Redes Neurais",
         "link": "https://github.com/RodrigoOBC/Notebooks_RedesNeurais",
         "tags": ["Python", "Tensorflow", "Pandas"]
 
