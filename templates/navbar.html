@@ -17,6 +17,16 @@
             <a class="text-gradient" href="{{ personal_data.linkedin }}" style="margin-left: 15px;"><i class="bi bi-linkedin"></i></a>
                 <a class="text-gradient" href="{{ personal_data.github }}" style="margin-left: 15px;"><i class="bi bi-github"></i></a>
                 <a class="text-gradient" href="{{ personal_data.mediun }} "style="margin-left: 15px;"><i class="bi bi-medium"></i></a>
+                <a href="#" onclick="changeLanguageToEnglish()" style="margin-left: 15px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="English" style="width: 24px; height: 24px;">
+                </a>
+                <script>
+                    function changeLanguageToEnglish() {
+                        var currentPath = window.location.pathname;
+                        var newPath = '/en' + currentPath;
+                        window.location.href = newPath;
+                    }
+                </script>
         </div>
     </div>
 </nav>
