@@ -7,6 +7,7 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            {% if languagerTarget == 'pt' %}
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                 <li class="nav-item"><a class="nav-link" href="/">Sobre Mim</a></li>
                 <li class="nav-item"><a class="nav-link" href="/education">Formação</a></li>
@@ -14,16 +15,47 @@
                 <li class="nav-item"><a class="nav-link" href="/articles">Artigos</a></li>
                 <li class="nav-item"><a class="nav-link" href="/repositories">Repositórios</a></li>
             </ul>
+            {% elif languagerTarget == 'en' %}
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                <li class="nav-item"><a class="nav-link" href="/en">About me </a></li>
+                <li class="nav-item"><a class="nav-link" href="/en/education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="/en/work">Works</a></li>
+                <li class="nav-item"><a class="nav-link" href="/en/articles">Articles</a></li>
+                <li class="nav-item"><a class="nav-link" href="/en/repositories">Repositories</a></li>
+            </ul>
+            {% endif %}
             <a class="text-gradient" href="{{ personal_data.linkedin }}" style="margin-left: 15px;"><i class="bi bi-linkedin"></i></a>
                 <a class="text-gradient" href="{{ personal_data.github }}" style="margin-left: 15px;"><i class="bi bi-github"></i></a>
                 <a class="text-gradient" href="{{ personal_data.mediun }} "style="margin-left: 15px;"><i class="bi bi-medium"></i></a>
+                
+                {% if languagerTarget == 'en' %}
+                <a href="#" onclick="changeLanguageToPortuguese()" style="margin-left: 15px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Portuguese" style="width: 24px; height: 24px;">
+                </a>
+
+                {% elif languagerTarget == 'pt' %}
                 <a href="#" onclick="changeLanguageToEnglish()" style="margin-left: 15px;">
                     <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="English" style="width: 24px; height: 24px;">
                 </a>
+
+                {% endif %}
+                
                 <script>
                     function changeLanguageToEnglish() {
                         var currentPath = window.location.pathname;
+                        if (currentPath.startsWith('/en')) {
+                            return;
+                        }
                         var newPath = '/en' + currentPath;
+                        window.location.href = newPath;
+                    }
+
+                    function changeLanguageToPortuguese() {
+                        var currentPath = window.location.pathname;
+                        if (!currentPath.startsWith('/en')) {
+                            return;
+                        }
+                        var newPath = currentPath.substring(3);
                         window.location.href = newPath;
                     }
                 </script>
