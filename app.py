@@ -25,7 +25,9 @@ def index(lang='pt'):
 
 
 @app.route('/education')
+@app.route('/education/')
 @app.route('/<lang>/education')
+@app.route('/<lang>/education/')
 def education(lang='pt'):
     personal_data_all = language_processor.get_json(
         "static/data/personal_data.json")
@@ -43,7 +45,9 @@ def education(lang='pt'):
 
 
 @app.route('/work')
+@app.route('/work/')
 @app.route('/<lang>/work')
+@app.route('/<lang>/work/')
 def work(lang='pt'):
     personal_data_all = language_processor.get_json(
         "static/data/personal_data.json")
@@ -61,6 +65,8 @@ def work(lang='pt'):
 
 @app.route('/articles')
 @app.route('/<lang>/articles')
+@app.route('/articles/')
+@app.route('/<lang>/articles/')
 def projects(lang='pt'):
     personal_data_all = language_processor.get_json(
         "static/data/personal_data.json")
@@ -73,7 +79,9 @@ def projects(lang='pt'):
 
 
 @app.route('/repositories')
+@app.route('/repositories/')
 @app.route('/<lang>/repositories')
+@app.route('/<lang>/repositories/')
 def repositories(lang='pt'):
     personal_data_all = language_processor.get_json(
         "static/data/personal_data.json")
