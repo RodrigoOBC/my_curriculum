@@ -14,6 +14,11 @@ language_processor = LanguageProcessor()
 def index(lang='pt'):
     personal_data_all = language_processor.get_json(
         "static/data/personal_data.json")
+    if lang not in ['pt', 'en']:
+        personal_data = language_processor.get_language_json(
+        personal_data_all, 'pt')
+        return render_template('404.html',personal_data=personal_data, languagerTarget="pt"), 404
+    
     personal_data = language_processor.get_language_json(
         personal_data_all, lang)
     return render_template('index.html', personal_data=personal_data, languagerTarget=lang)
@@ -79,6 +84,13 @@ def repositories(lang='pt'):
     repositories = language_processor.get_language_json(repositories_all, lang)
     return render_template('repository.html', data=repositories, personal_data=personal_data,  languagerTarget=lang)
 
+@app.errorhandler(404)
+def page_not_found(e):
+    personal_data_all = language_processor.get_json(
+        "static/data/personal_data.json")
+    personal_data = language_processor.get_language_json(
+        personal_data_all, "pt")
+    return render_template('404.html', personal_data=personal_data,languagerTarget="pt"), 404
 
 if __name__ == '__main__':
     app.run(port=10000, debug=True)
