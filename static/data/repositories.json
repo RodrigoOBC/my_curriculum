@@ -1,4 +1,4 @@
-{
+{"pt":{
     "github":[
         {
         "title": "Cypress DevContainer",
@@ -66,4 +66,63 @@
     }
 
 ]
-}
+}, "en":{ "github":[
+    {
+        "title": "Cypress DevContainer",
+        "subtitle": "Framework for interface testing with Cypress and Docker",
+        "description": "Framework for interface testing with Cypress and Docker",
+        "link": "https://github.com/RodrigoOBC/Cypress_devContainer",
+        "tags": ["cypress", "Docker", "NodeJs"]
+    },
+    {
+        "title": "Playwright DevContainer",
+        "subtitle": "Framework for interface testing with Playwright and Docker",
+        "description": "Framework for interface testing with Playwright and Docker",
+        "link": "https://github.com/RodrigoOBC/playwright_page_object",
+        "tags": ["Playwright", "Docker", "NodeJs"]
+    },
+    {
+        "title": "Selenium Framework with Python-BDD",
+        "subtitle": "Framework for interface testing with Selenium and Cucumber",
+        "description": "Framework for interface testing with Selenium and Cucumber",
+        "link": "https://github.com/RodrigoOBC/FrameWorkSeleniumPythonBDD",
+        "tags": ["Selenium", "Python", "Cucumber"]
+    },
+    {
+        "title": "Puppeteer Framework with Cucumber",
+        "subtitle": "Framework for interface testing with Puppeteer and Cucumber",
+        "description": "Framework for interface testing with Puppeteer and Cucumber",
+        "link": "https://github.com/RodrigoOBC/PuppeteerFrameWork",
+        "tags": ["Puppeteer", "NodeJs", "Cucumber"]
+    },
+    {
+        "title": "Final Project - Data Science",
+        "subtitle": "Final project for the Postgraduate course in Data Science",
+        "description": "Final project for the Postgraduate course in Data Science",
+        "link": "https://github.com/RodrigoOBC/TCC-CienciaDados",
+        "tags": ["Python", "Tensorflow", "Pandas"]
+    },
+    {
+        "title": "Notebook with Neural Networks",
+        "subtitle": "Some examples of Neural Networks",
+        "description": "Some examples of Neural Networks",
+        "link": "https://github.com/RodrigoOBC/Notebooks_RedesNeurais",
+        "tags": ["Python", "Tensorflow", "Pandas"]
+    },
+    {
+        "title": "My Portfolio",
+        "subtitle": "Portfolio template with Flask",
+        "description": "Portfolio template with Flask",
+        "link": "https://github.com/RodrigoOBC/my_curriculum",
+        "tags": ["Python", "Html", "Flask"]
+    },
+    {
+        "title": "Playwright Framework with NodeJs",
+        "subtitle": "Playwright framework with NodeJs + Docker",
+        "description": "Interface test template with Playwright and NodeJs. The test is performed in a Docker container",
+        "link": "https://github.com/RodrigoOBC/PlaywrightFrameworkNodejs",
+        "tags": ["Playwright", "Docker", "NodeJs"]
+    }
+]
+
+}}
