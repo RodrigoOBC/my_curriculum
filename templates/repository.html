@@ -53,11 +53,19 @@
         <!-- Call to action section-->
         <section class="py-5 bg-gradient-primary-to-secondary text-white">
             <div class="container px-5 my-5">
+                {% if languagerTarget == 'pt' %}
                 <div class="text-center">
                     <h2 class="display-4 fw-bolder mb-4">Para ver todos os repositórios, visite meu GitHub.</h2>
                     <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder"
                         href="https://github.com/RodrigoOBC">Clique aqui!</a>
                 </div>
+                {% elif languagerTarget == 'en' %}
+                <div class="text-center">
+                    <h2 class="display-4 fw-bolder mb-4">To see all repositories, visit my GitHub.</h2>
+                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder"
+                    href="https://github.com/RodrigoOBC">Click here!</a>
+                </div>
+                {% endif %}
             </div>
         </section>
     </main>
