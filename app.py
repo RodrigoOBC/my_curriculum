@@ -1,6 +1,6 @@
 import json
 from flask import Flask
-from flask import render_template
+from flask import render_template, request
 from src.script import LanguageProcessor
 
 
@@ -12,13 +12,10 @@ language_processor = LanguageProcessor()
 @app.route('/')
 @app.route('/<lang>/')
 def index(lang='pt'):
+    if lang not in ['pt', 'en']:
+        return page_not_found(404)
     personal_data_all = language_processor.get_json(
         "static/data/personal_data.json")
-    if lang not in ['pt', 'en']:
-        personal_data = language_processor.get_language_json(
-            personal_data_all, 'pt')
-        return render_template('404.html', personal_data=personal_data, languagerTarget="pt"), 404
-
     personal_data = language_processor.get_language_json(
         personal_data_all, lang)
     return render_template('index.html', personal_data=personal_data, languagerTarget=lang)
@@ -29,6 +26,8 @@ def index(lang='pt'):
 @app.route('/<lang>/education')
 @app.route('/<lang>/education/')
 def education(lang='pt'):
+    if lang not in ['pt', 'en']:
+        return page_not_found(404)
     personal_data_all = language_processor.get_json(
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
@@ -49,6 +48,8 @@ def education(lang='pt'):
 @app.route('/<lang>/work')
 @app.route('/<lang>/work/')
 def work(lang='pt'):
+    if lang not in ['pt', 'en']:
+        return page_not_found(404)
     personal_data_all = language_processor.get_json(
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
@@ -68,6 +69,8 @@ def work(lang='pt'):
 @app.route('/articles/')
 @app.route('/<lang>/articles/')
 def projects(lang='pt'):
+    if lang not in ['pt', 'en']:
+        return page_not_found(404)
     personal_data_all = language_processor.get_json(
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
@@ -83,6 +86,8 @@ def projects(lang='pt'):
 @app.route('/<lang>/repositories')
 @app.route('/<lang>/repositories/')
 def repositories(lang='pt'):
+    if lang not in ['pt', 'en']:
+        return page_not_found(404)
     personal_data_all = language_processor.get_json(
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
@@ -95,11 +100,16 @@ def repositories(lang='pt'):
 
 @app.errorhandler(404)
 def page_not_found(e):
+    print(request.url)
+    if fr"/en" in request.url:
+        language_target = "en"
+    else:
+        language_target = "pt"
     personal_data_all = language_processor.get_json(
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
-        personal_data_all, "pt")
-    return render_template('404.html', personal_data=personal_data, languagerTarget="pt"), 404
+        personal_data_all, language_target)
+    return render_template('404.html', personal_data=personal_data, languagerTarget=language_target), 404
 
 
 if __name__ == '__main__':
