@@ -1,13 +1,34 @@
 {
-    "NameComplete": "Rodrigo de Brito de Oliveira Cabral",
-    "Name": "Rodrigo",
-    "LastName": "Cabral",
-    "email":"rodrigo.cabral.qa@gmail.com",
-    "ActualJob": "Lider Tecnico de QA",
-    "imag":"rodrigo.jpg",
-    "AboutMe": ["Olá, eu sou um Lider Tecnico de Teste e Qualidade de Software com 5 anos de experiência. Meu foco é em automatização e eu tenho habilidades sólidas em áreas como cenários de teste, execução de teste, testes funcionais e teste automatizado." , "Sou especialista em ferramentas de teste como Playwright, Cypress e Selenium. Como profissional, sou responsável por desenvolver e implementar roteiros de teste abrangentes que cubram todas as funcionalidades e aspectos do software. Sou habilidoso em planejar e executar testes funcionais e automatizados de forma bem-sucedida, garantindo que todos os cenários de teste sejam cobertos.", "Sou altamente experiente em homologação, o que me ajuda a garantir que todos os requisitos de negócios e do cliente sejam cumpridos antes de lançar o software para o público. Como Tech lead de QA, eu sou altamente valorizado por minha capacidade de gerenciar projetos complexos de teste com eficiência e precisão."],
-    "linkedin":"https://www.linkedin.com/in/rodrigo-cabral-0280b3121/",
-    "github":"https://github.com/RodrigoOBC",
-    "mediun":"https://medium.com/@rodrigo.oliveiracabral"
-
+    "pt": {
+        "NameComplete": "Rodrigo de Brito de Oliveira Cabral",
+        "Name": "Rodrigo",
+        "LastName": "Cabral",
+        "email": "rodrigo.cabral.qa@gmail.com",
+        "ActualJob": "Lider Tecnico de QA",
+        "imag": "rodrigo.jpg",
+        "AboutMe": [
+            "Olá, eu sou um Líder Técnico de Teste e Qualidade de Software e atuo na área desde 2019. Meu foco é em automatização e eu tenho habilidades sólidas em áreas como cenários de teste, execução de teste, testes funcionais e teste automatizado.",
+            "Sou especialista em ferramentas de teste como Playwright, Cypress e Selenium. Como profissional, sou responsável por desenvolver e implementar roteiros de teste abrangentes que cubram todas as funcionalidades e aspectos do software. Sou habilidoso em planejar e executar testes funcionais e automatizados de forma bem-sucedida, garantindo que todos os cenários de teste sejam cobertos.",
+            "Sou altamente experiente em homologação, o que me ajuda a garantir que todos os requisitos de negócios e do cliente sejam cumpridos antes de lançar o software para o público. Como Tech lead de QA, eu sou altamente valorizado por minha capacidade de gerenciar projetos complexos de teste com eficiência e precisão."
+        ],
+        "linkedin": "https://www.linkedin.com/in/rodrigo-cabral-0280b3121/",
+        "github": "https://github.com/RodrigoOBC",
+        "mediun": "https://medium.com/@rodrigo.oliveiracabral"
+    },
+    "en": {
+        "NameComplete": "Rodrigo de Brito de Oliveira Cabral",
+        "Name": "Rodrigo",
+        "LastName": "Cabral",
+        "email": "rodrigo.cabral.qa@gmail.com",
+        "ActualJob": "Tech Lead QA",
+        "imag": "rodrigo.jpg",
+        "AboutMe": [
+            "Hello, I am a Tech Leader in Software Testing and Quality, and I have been working in the field since 2019. My focus is on automation, and I have strong skills in areas such as test scenarios, test execution, functional testing, and automated testing.",
+            "I am an expert in testing tools such as Playwright, Cypress, and Selenium. As a professional, I am responsible for developing and implementing comprehensive test scripts that cover all functionalities and aspects of the software. I am skilled in planning and executing both functional and automated tests successfully, ensuring that all test scenarios are covered.",
+            "I am highly experienced in validation, which helps me ensure that all business and customer requirements are met before releasing the software to the public. As a QA Tech Lead, I am highly valued for my ability to manage complex testing projects with efficiency and precision."
+        ],
+        "linkedin": "https://www.linkedin.com/in/rodrigo-cabral-0280b3121/",
+        "github": "https://github.com/RodrigoOBC",
+        "mediun": "https://medium.com/@rodrigo.oliveiracabral"
+    }
 }

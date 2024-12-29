@@ -1,54 +1,116 @@
 import json
 from flask import Flask
-from flask import render_template
+from flask import render_template, request
+from src.script import LanguageProcessor
 
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
+language_processor = LanguageProcessor()
+
 
 @app.route('/')
-def index():
-    with open("static/data/personal_data.json", encoding='utf-8') as my_json:
-        personal_data = json.load(my_json)
-        
-    return render_template('index.html',personal_data=personal_data)
+@app.route('/<lang>/')
+def index(lang='pt'):
+    if lang not in ['pt', 'en']:
+        return page_not_found(404)
+    personal_data_all = language_processor.get_json(
+        "static/data/personal_data.json")
+    personal_data = language_processor.get_language_json(
+        personal_data_all, lang)
+    return render_template('index.html', personal_data=personal_data, languagerTarget=lang)
+
 
 @app.route('/education')
-def education():
-    with open("static/data/profissional_skills_data.json", encoding='utf-8') as my_json:
-        education = json.load(my_json)
-    with open("static/data/personal_data.json", encoding='utf-8') as my_json:
-        personal_data = json.load(my_json)
-    heading = "Formação"
-        
-    return render_template('education.html',data=education, personal_data=personal_data,heading=heading)
+@app.route('/education/')
+@app.route('/<lang>/education')
+@app.route('/<lang>/education/')
+def education(lang='pt'):
+    if lang not in ['pt', 'en']:
+        return page_not_found(404)
+    personal_data_all = language_processor.get_json(
+        "static/data/personal_data.json")
+    personal_data = language_processor.get_language_json(
+        personal_data_all, lang)
+    education_all = language_processor.get_json(
+        "static/data/profissional_skills_data.json")
+    education = language_processor.get_language_json(education_all, lang)
+    if lang == 'pt':
+        heading = "Formação"
+    else:
+        heading = "Education"
+
+    return render_template('education.html', data=education, personal_data=personal_data, heading=heading, languagerTarget=lang)
+
 
 @app.route('/work')
-def work():
-    with open("static/data/profissional_skills_data.json", encoding='utf-8') as my_json:
-        work = json.load(my_json)
-    with open("static/data/personal_data.json", encoding='utf-8') as my_json:
-        personal_data = json.load(my_json)
-    heading = "Experiência"
-    return render_template('experience.html',data=work,personal_data=personal_data,heading=heading)
+@app.route('/work/')
+@app.route('/<lang>/work')
+@app.route('/<lang>/work/')
+def work(lang='pt'):
+    if lang not in ['pt', 'en']:
+        return page_not_found(404)
+    personal_data_all = language_processor.get_json(
+        "static/data/personal_data.json")
+    personal_data = language_processor.get_language_json(
+        personal_data_all, lang)
+    work_all = language_processor.get_json(
+        "static/data/profissional_skills_data.json")
+    work = language_processor.get_language_json(work_all, lang)
+    if lang == 'pt':
+        heading = "Experiência"
+    else:
+        heading = "Experience"
+    return render_template('experience.html', data=work, personal_data=personal_data, heading=heading, languagerTarget=lang)
+
 
 @app.route('/articles')
-def projects():
+@app.route('/<lang>/articles')
+@app.route('/articles/')
+@app.route('/<lang>/articles/')
+def projects(lang='pt'):
+    if lang not in ['pt', 'en']:
+        return page_not_found(404)
+    personal_data_all = language_processor.get_json(
+        "static/data/personal_data.json")
+    personal_data = language_processor.get_language_json(
+        personal_data_all, lang)
     with open("static/data/articles.json", encoding='utf-8') as my_json:
         articles = json.load(my_json)
-    with open("static/data/personal_data.json", encoding='utf-8') as my_json:
-        personal_data = json.load(my_json)
-        
-    return render_template('articles.html',data=articles,personal_data=personal_data)
+
+    return render_template('articles.html', data=articles, personal_data=personal_data, languagerTarget=lang)
+
 
 @app.route('/repositories')
-def repositories():
-    with open("static/data/repositories.json", encoding='utf-8') as my_json:
-        repositories = json.load(my_json)
-    with open("static/data/personal_data.json", encoding='utf-8') as my_json:
-        personal_data = json.load(my_json)
-        
-    return render_template('repository.html',data=repositories,personal_data=personal_data)
+@app.route('/repositories/')
+@app.route('/<lang>/repositories')
+@app.route('/<lang>/repositories/')
+def repositories(lang='pt'):
+    if lang not in ['pt', 'en']:
+        return page_not_found(404)
+    personal_data_all = language_processor.get_json(
+        "static/data/personal_data.json")
+    personal_data = language_processor.get_language_json(
+        personal_data_all, lang)
+    repositories_all = language_processor.get_json(
+        "static/data/repositories.json")
+    repositories = language_processor.get_language_json(repositories_all, lang)
+    return render_template('repository.html', data=repositories, personal_data=personal_data,  languagerTarget=lang)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    print(request.url)
+    if fr"/en" in request.url:
+        language_target = "en"
+    else:
+        language_target = "pt"
+    personal_data_all = language_processor.get_json(
+        "static/data/personal_data.json")
+    personal_data = language_processor.get_language_json(
+        personal_data_all, language_target)
+    return render_template('404.html', personal_data=personal_data, languagerTarget=language_target), 404
+
 
 if __name__ == '__main__':
     app.run(port=10000, debug=True)
