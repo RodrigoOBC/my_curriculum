@@ -52,8 +52,13 @@
             <section class="py-5 bg-gradient-primary-to-secondary text-white">
                 <div class="container px-5 my-5">
                     <div class="text-center">
+                        {% if languagerTarget == 'pt' %}
                         <h2 class="display-4 fw-bolder mb-4">Para ler todos os artigos, visite meu Medium</h2>
                         <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="https://medium.com/@rodrigo.oliveiracabral">Clique aqui</a>
+                        {% elif languagerTarget == 'en' %}
+                        <h2 class="display-4 fw-bolder mb-4">To read all articles, visit my Medium</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="https://medium.com/@rodrigo.oliveiracabral">Click here</a>
+                        {% endif %}
                     </div>
                 </div>
             </section>
