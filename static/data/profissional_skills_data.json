@@ -1,4 +1,4 @@
-{
+{"pt":{
     "jobs": [
         {
             "position": "Tech Lead QA",
@@ -106,4 +106,113 @@
     ],
     "profissinal_skills":[
         "Liderança","FeedBack","Visão Estratégica","Planejamento","Gestão de Pessoas","Gestão de Processos","Gestão de Qualidade"]
-}
+}, "en":{
+    "jobs": [
+        {
+            "position": "Tech Lead QA",
+            "company": "Radix Engineering and Software",
+            "startDate": "APRIL 2023",
+            "endDate": "Present",
+            "descriptions": [
+                "Manage the quality assurance team and ensure team productivity and the quality of delivered results;",
+                "Establish and implement test automation strategies to ensure efficiency and accuracy of tests;",
+                "Coordinate the execution of software tests to identify defects and ensure compliance with product requirements;",
+                "Communicate with other team leaders and stakeholders to ensure alignment of testing priorities and project progress;",
+                "Automate web-based test cases using Cypress, Protractor, and Puppeteer to improve test coverage and reliability;"
+            ],
+            "state": "Rio de Janeiro - RJ"
+        },
+        {
+            "position": "Senior Test Analyst",
+            "company": "Radix Engineering and Software",
+            "startDate": "Nov. 2022",
+            "endDate": "Apr. 2023",
+            "descriptions": [
+                "Providing leadership to the QA team and ensuring productivity and quality standards;",
+                "Automating multilingual API test cases using frameworks such as K6 to improve efficiency and accuracy;",
+                "Automating web-based test cases using Selenium and programming languages such as Python or NodeJS to ensure compatibility across different browsers and platforms;",
+                "Automating web-based test cases using Playwright and programming languages such as Python or NodeJS to improve test efficiency;",
+                "Automating web-based test cases using Cypress, Protractor, and Puppeteer to improve test coverage and reliability;"
+            ],
+            "state": "Rio de Janeiro - RJ"
+        },
+        {
+            "position": "Test Analyst Pl.",
+            "company": "Radix Engineering and Software",
+            "startDate": "Feb. 2022",
+            "endDate": "Nov. 2022",
+            "descriptions": [
+                "Automating multilingual API test cases using frameworks such as K6 to improve efficiency and accuracy;",
+                "Automating web-based test cases using Selenium and programming languages such as Python or NodeJS to ensure compatibility across different browsers and platforms;",
+                "Automating web-based test cases using Playwright and programming languages such as Python or NodeJS to improve test efficiency;",
+                "Automating web-based test cases using Cypress, Protractor, and Puppeteer to improve test coverage and reliability;"
+            ],
+            "state": "Rio de Janeiro - RJ"
+        },
+        {
+            "position": "Junior Test Analyst",
+            "company": "Radix Engineering and Software",
+            "startDate": "Jan. 2020",
+            "endDate": "Feb. 2022",
+            "descriptions": [
+                "Automating multilingual API test cases using frameworks such as K6 to improve efficiency and accuracy;",
+                "Automating web-based test cases using Selenium and programming languages such as Python or NodeJS to ensure compatibility across different browsers and platforms;",
+                "Automating web-based test cases using Playwright and programming languages such as Python or NodeJS to improve test efficiency;",
+                "Automating web-based test cases using Cypress, Protractor, and Puppeteer to improve test coverage and reliability;"
+            ],
+            "state": "Rio de Janeiro - RJ"
+        }
+    ],
+    "Educations": [
+        {
+            "institution": "Puc Minas",
+            "course": "Data Science and Big Data",
+            "state": "EAD",
+            "startDate": "2020",
+            "endDate": "2022",
+            "type": "Postgraduate",
+            "description": "Postgraduate in Data Science and Big Data."
+        },
+        {
+            "institution": "Unicarioca",
+            "course": "Computer Science",
+            "state": "Rio de Janeiro - RJ",
+            "startDate": "2015",
+            "endDate": "2019",
+            "type": "Bachelor's Degree",
+            "description": "Bachelor's Degree in Computer Science."
+        }
+    ],
+    "Skills": [
+        {
+            "skill": "Python"
+        },
+        {
+            "skill": "C#"
+        },
+        {
+            "skill": "NodeJS"
+        },
+        {
+            "skill": "Playwright"
+        },
+        {
+            "skill": "Cypress"
+        },
+        {
+            "skill": "Postman"
+        },
+        {
+            "skill": "K6"
+        },
+        {
+            "skill": "Docker"
+        },
+        {
+            "skill": "PactJs"
+        }
+    ],
+    "profissinal_skills": [
+        "Leadership", "Feedback", "Strategic Vision", "Planning", "People Management", "Process Management", "Quality Management"
+    ]
+}}
