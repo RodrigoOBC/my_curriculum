@@ -54,9 +54,7 @@ def work(lang='pt'):
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
         personal_data_all, lang)
-    work_all = language_processor.get_json(
-        "static/data/profissional_skills_data.json")
-    work = language_processor.get_language_json(work_all, lang)
+    work = language_processor.get_jobs('pt/Br')
     if lang == 'pt':
         heading = "Experiência"
     else:
