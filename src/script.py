@@ -1,5 +1,8 @@
 import json
 from flask import render_template
+from dotenv import load_dotenv
+import os
+from .DB.Mongo_oparator import MongoOperator
 
 
 class LanguageProcessor:
@@ -16,3 +19,10 @@ class LanguageProcessor:
     def validate_language(self, lang):
         if lang not in ['pt', 'en']:
             return 
+
+    def get_jobs(self, lang):
+        mongo_operator = MongoOperator(os.getenv("URL_MONGO_DB"),'Curriculo')
+        jobs = mongo_operator.find_by_query('Experiencia', {'lang': lang})
+        return jobs
+        
+        
