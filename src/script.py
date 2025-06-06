@@ -36,3 +36,15 @@ class LanguageProcessor:
         print(skills)
         skills = skills[0][type_skills]
         return skills
+    
+    def get_repositories(self, lang):
+        mongo_operator = MongoOperator(os.getenv("URL_MONGO_DB"),'Curriculo')
+        repositories = mongo_operator.find_by_query('Repositories')
+        repositories = repositories[0][lang]
+        return repositories
+    
+    def get_articles(self,lang):
+        mongo_operator = MongoOperator(os.getenv("URL_MONGO_DB"),'Curriculo')
+        articles = mongo_operator.find_by_query('Articles', {'lang':lang})
+        print(articles)
+        return articles

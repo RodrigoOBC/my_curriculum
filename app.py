@@ -79,8 +79,7 @@ def projects(lang='pt'):
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
         personal_data_all, lang)
-    with open("static/data/articles.json", encoding='utf-8') as my_json:
-        articles = json.load(my_json)
+    articles = language_processor.get_articles('pt')
 
     return render_template('articles.html', data=articles, personal_data=personal_data, languagerTarget=lang)
 
@@ -96,9 +95,7 @@ def repositories(lang='pt'):
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
         personal_data_all, lang)
-    repositories_all = language_processor.get_json(
-        "static/data/repositories.json")
-    repositories = language_processor.get_language_json(repositories_all, lang)
+    repositories = language_processor.get_repositories(lang)
     return render_template('repository.html', data=repositories, personal_data=personal_data,  languagerTarget=lang)
 
 
