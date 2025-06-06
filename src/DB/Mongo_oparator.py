@@ -8,22 +8,20 @@ load_dotenv()
 
 
 class MongoOperator:
-    def __init__(self, host='localhost', db_name='Curriculo'):
+    def __init__(self, host="localhost", db_name="Curriculo"):
         self.host = host
         self.db_name = db_name
 
-    
     def open_connection(self):
-        self.client = pymongo.MongoClient(self.host, server_api=ServerApi('1'))
-    
+        self.client = pymongo.MongoClient(self.host, server_api=ServerApi("1"))
+
     def close_connection(self):
         self.client.close()
-
 
     def check_connection(self):
         try:
             self.open_connection()
-            self.client.admin.command('ping')
+            self.client.admin.command("ping")
             self.close_connection()
             return True
         except pymongo.errors.ConnectionFailure:
@@ -47,7 +45,7 @@ class MongoOperator:
             return []
         finally:
             self.close_connection()
-    
+
     def find_by_query(self, collection_name, query=None):
         try:
             self.open_connection()
@@ -73,69 +71,3 @@ class MongoOperator:
 
     def close(self):
         self.client.close()
-
-if __name__ == "__main__":
-    mongo_operator = MongoOperator(os.getenv("URL_MONGO_DB"),'Curriculo')
-    values = [
-        {
-            "position": "Tech Lead QA",
-            "company": "Radix Engineering and Software",
-            "startDate": "APRIL 2023",
-            "endDate": "Present",
-            "descriptions": [
-                "Manage the quality assurance team and ensure team productivity and the quality of delivered results;",
-                "Establish and implement test automation strategies to ensure efficiency and accuracy of tests;",
-                "Coordinate the execution of software tests to identify defects and ensure compliance with product requirements;",
-                "Communicate with other team leaders and stakeholders to ensure alignment of testing priorities and project progress;",
-                "Automate web-based test cases using Cypress, Protractor, and Puppeteer to improve test coverage and reliability;"
-            ],
-            "state": "Rio de Janeiro - RJ",
-            "lang": "en/Us"
-        },
-        {
-            "position": "Senior Test Analyst",
-            "company": "Radix Engineering and Software",
-            "startDate": "Nov. 2022",
-            "endDate": "Apr. 2023",
-            "descriptions": [
-                "Providing leadership to the QA team and ensuring productivity and quality standards;",
-                "Automating multilingual API test cases using frameworks such as K6 to improve efficiency and accuracy;",
-                "Automating web-based test cases using Selenium and programming languages such as Python or NodeJS to ensure compatibility across different browsers and platforms;",
-                "Automating web-based test cases using Playwright and programming languages such as Python or NodeJS to improve test efficiency;",
-                "Automating web-based test cases using Cypress, Protractor, and Puppeteer to improve test coverage and reliability;"
-            ],
-            "state": "Rio de Janeiro - RJ",
-            "lang": "en/Us"
-        },
-        {
-            "position": "Test Analyst Pl.",
-            "company": "Radix Engineering and Software",
-            "startDate": "Feb. 2022",
-            "endDate": "Nov. 2022",
-            "descriptions": [
-                "Automating multilingual API test cases using frameworks such as K6 to improve efficiency and accuracy;",
-                "Automating web-based test cases using Selenium and programming languages such as Python or NodeJS to ensure compatibility across different browsers and platforms;",
-                "Automating web-based test cases using Playwright and programming languages such as Python or NodeJS to improve test efficiency;",
-                "Automating web-based test cases using Cypress, Protractor, and Puppeteer to improve test coverage and reliability;"
-            ],
-            "state": "Rio de Janeiro - RJ",
-            "lang": "en/Us"
-        },
-        {
-            "position": "Junior Test Analyst",
-            "company": "Radix Engineering and Software",
-            "startDate": "Jan. 2020",
-            "endDate": "Feb. 2022",
-            "descriptions": [
-                "Automating multilingual API test cases using frameworks such as K6 to improve efficiency and accuracy;",
-                "Automating web-based test cases using Selenium and programming languages such as Python or NodeJS to ensure compatibility across different browsers and platforms;",
-                "Automating web-based test cases using Playwright and programming languages such as Python or NodeJS to improve test efficiency;",
-                "Automating web-based test cases using Cypress, Protractor, and Puppeteer to improve test coverage and reliability;"
-            ],
-            "state": "Rio de Janeiro - RJ",
-            "lang": "en/Us"
-        }
-    ]
-    for value in values:
-        mongo_operator.insert_one('Experiencia', value)
-    print(mongo_operator.find_all('Experiencia'))
