@@ -27,7 +27,7 @@ class LanguageProcessor:
     
     def get_education(self, lang):
         mongo_operator = MongoOperator(os.getenv("URL_MONGO_DB"),'Curriculo')
-        education = mongo_operator.find_by_query('Educacao', {'lang': lang})
+        education = mongo_operator.find_by_query('Education', {'lang': lang})
         return education
         
     def get_skills(self, lang, type_skills):
