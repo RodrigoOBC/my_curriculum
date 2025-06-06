@@ -32,15 +32,17 @@ def education(lang='pt'):
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
         personal_data_all, lang)
-    education_all = language_processor.get_json(
-        "static/data/profissional_skills_data.json")
-    education = language_processor.get_language_json(education_all, lang)
+    
+    education = language_processor.get_education(lang)
+    had_skills = language_processor.get_skills(lang, 'HadSkills')
+
+
     if lang == 'pt':
         heading = "Formação"
     else:
         heading = "Education"
 
-    return render_template('education.html', data=education, personal_data=personal_data, heading=heading, languagerTarget=lang)
+    return render_template('education.html', data=education,had_skills=had_skills, personal_data=personal_data, heading=heading, languagerTarget=lang)
 
 
 @app.route('/work')
@@ -54,14 +56,16 @@ def work(lang='pt'):
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
         personal_data_all, lang)
-    work_all = language_processor.get_json(
-        "static/data/profissional_skills_data.json")
-    work = language_processor.get_language_json(work_all, lang)
-    if lang == 'pt':
-        heading = "Experiência"
-    else:
-        heading = "Experience"
-    return render_template('experience.html', data=work, personal_data=personal_data, heading=heading, languagerTarget=lang)
+    match lang:
+        case 'pt':
+            work = language_processor.get_jobs('pt/Br')
+            heading = "Experiência"
+        case 'en':
+            work = language_processor.get_jobs('en/Us')
+            heading = "Experience"
+
+    soft_skills = language_processor.get_skills(lang,'Softskills')
+    return render_template('experience.html', data=work,soft_skills=soft_skills, personal_data=personal_data, heading=heading, languagerTarget=lang)
 
 
 @app.route('/articles')
@@ -75,8 +79,7 @@ def projects(lang='pt'):
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
         personal_data_all, lang)
-    with open("static/data/articles.json", encoding='utf-8') as my_json:
-        articles = json.load(my_json)
+    articles = language_processor.get_articles('pt')
 
     return render_template('articles.html', data=articles, personal_data=personal_data, languagerTarget=lang)
 
@@ -92,9 +95,7 @@ def repositories(lang='pt'):
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
         personal_data_all, lang)
-    repositories_all = language_processor.get_json(
-        "static/data/repositories.json")
-    repositories = language_processor.get_language_json(repositories_all, lang)
+    repositories = language_processor.get_repositories(lang)
     return render_template('repository.html', data=repositories, personal_data=personal_data,  languagerTarget=lang)
 
 

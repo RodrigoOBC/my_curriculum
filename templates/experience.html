@@ -40,7 +40,7 @@
                     <section>
                         {% include "buttonDownloadCV.html"%}
                         <!-- Experience Card 1-->
-                        {% for job in data.jobs %}
+                        {% for job in data %}
                         <div class="card shadow border-0 rounded-4 mb-5">
                             <div class="card-body p-5">
                                 <div class="row align-items-center gx-5">
@@ -83,7 +83,7 @@
                                         <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional
                                                 Skills</span></h3>
                                     </div>
-                                    {% for skill in data.profissinal_skills|batch(3) %}
+                                    {% for skill in soft_skills|batch(3) %}
                                     <div class="row row-cols-1 row-cols-md-3 mb-4">
                                         {% for s in skill %}
                                         <div class="col mb-4 mb-md-0">
