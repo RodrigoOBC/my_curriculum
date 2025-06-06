@@ -54,12 +54,16 @@ def work(lang='pt'):
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
         personal_data_all, lang)
-    work = language_processor.get_jobs('pt/Br')
-    if lang == 'pt':
-        heading = "Experiência"
-    else:
-        heading = "Experience"
-    return render_template('experience.html', data=work, personal_data=personal_data, heading=heading, languagerTarget=lang)
+    match lang:
+        case 'pt':
+            work = language_processor.get_jobs('pt/Br')
+            heading = "Experiência"
+        case 'en':
+            work = language_processor.get_jobs('en/Us')
+
+            heading = "Experience"
+    soft_skills = language_processor.get_skills(lang,'Softskills')
+    return render_template('experience.html', data=work,soft_skills=soft_skills, personal_data=personal_data, heading=heading, languagerTarget=lang)
 
 
 @app.route('/articles')
