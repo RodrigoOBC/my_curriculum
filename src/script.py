@@ -48,3 +48,10 @@ class LanguageProcessor:
         articles = mongo_operator.find_by_query('Articles', {'lang':lang})
         print(articles)
         return articles
+    
+    def get_curriculum(self, lang):
+        match lang:
+            case 'pt':
+                return os.getenv("CURRICULUM_PORTUGUES")
+            case 'en':
+                return os.getenv("CURRICULUM_INGLES")
