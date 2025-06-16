@@ -35,6 +35,7 @@ def education(lang='pt'):
     
     education = language_processor.get_education(lang)
     had_skills = language_processor.get_skills(lang, 'HadSkills')
+    curriculum_link = language_processor.get_curriculum(lang)
 
 
     if lang == 'pt':
@@ -42,7 +43,7 @@ def education(lang='pt'):
     else:
         heading = "Education"
 
-    return render_template('education.html', data=education,had_skills=had_skills, personal_data=personal_data, heading=heading, languagerTarget=lang)
+    return render_template('education.html', data=education,had_skills=had_skills, personal_data=personal_data, heading=heading, languagerTarget=lang, curriculum_link=curriculum_link)
 
 
 @app.route('/work')
@@ -56,6 +57,8 @@ def work(lang='pt'):
         "static/data/personal_data.json")
     personal_data = language_processor.get_language_json(
         personal_data_all, lang)
+    curriculum_link = language_processor.get_curriculum(lang)
+    
     match lang:
         case 'pt':
             work = language_processor.get_jobs('pt/Br')
@@ -65,7 +68,7 @@ def work(lang='pt'):
             heading = "Experience"
 
     soft_skills = language_processor.get_skills(lang,'Softskills')
-    return render_template('experience.html', data=work,soft_skills=soft_skills, personal_data=personal_data, heading=heading, languagerTarget=lang)
+    return render_template('experience.html', data=work,soft_skills=soft_skills, personal_data=personal_data, heading=heading, languagerTarget=lang, currulum_link=curriculum_link)
 
 
 @app.route('/articles')
