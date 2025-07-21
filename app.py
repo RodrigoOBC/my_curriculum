@@ -68,7 +68,7 @@ def work(lang='pt'):
             heading = "Experience"
 
     soft_skills = language_processor.get_skills(lang,'Softskills')
-    return render_template('experience.html', data=work,soft_skills=soft_skills, personal_data=personal_data, heading=heading, languagerTarget=lang, currulum_link=curriculum_link)
+    return render_template('experience.html', data=work,soft_skills=soft_skills, personal_data=personal_data, heading=heading, languagerTarget=lang, curriculum_link=curriculum_link)
 
 
 @app.route('/articles')
